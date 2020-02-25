@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context="lohitprojects.bitcointrack.latestHash">
+
+    <!-- view for AdMob Interstitial Ad -->
+
+
+    <TextView
+        android:id="@+id/latestHashtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/chocolateColor"
+        android:fontFamily="@font/asap"
+        android:padding="2dp"
+        android:text="Displaying Live Data"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:longClickable="true"
+        android:textIsSelectable="true"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adbanner2"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="lohitprojects.bitcointrack.Mining">
+
+    <TextView
+        android:id="@+id/latestHashtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/chocolateColor"
+        android:fontFamily="@font/asap"
+        android:padding="2dp"
+        android:text="Displaying Live Data"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <!-- view for AdMob Interstitial Ad -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/chocolateColor">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/totalBtc"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Total BTC"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulttotalBtc"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lateddtBlck"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Latest Block Height"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/latestHash"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Latest Hash"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/latesthash"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="➥"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/blockReward"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Current Block Reward"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reward"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/avgtime"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Avg Time Btw blocks"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/avgtymbtwblck"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/difficulty"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Current Difficulty"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/difficultyresult"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/avgTrans"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Avg transactions per block "
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/avgtxnperblck"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/hashtowin"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Hashes need to win"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulthashtowin"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/eta"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="eta"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulteta"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/twentyhtranscount"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:padding="3dip"
+                android:text="Tot. Transaction in 24hrs"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resulttwentyhtranscount"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="NA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adbanner1" />
+</RelativeLayout>

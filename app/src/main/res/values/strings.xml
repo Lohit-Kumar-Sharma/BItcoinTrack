@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Bitcoin Track</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_one_bitcoin_data"> </string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+
+    <!-- android studio demo ids -->
+    <!--<string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <string name="interstitial_ad_unit_id">ca-app-pub-4414879063309753/8970456947</string>
+    <string name="title_activity_banner_ad_activity">banner_ad_activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="banner_ad_unit_id">ca-app-pub-4414879063309753/3574713937</string>
+
+
+    <!-- My admob  adunit ids -->
+
+    <string name="adbanner1">ca-app-pub-4414879063309753/6312557918</string>
+    <string name="adbanner2">ca-app-pub-4414879063309753/3574713937</string>
+    <string name="adinterstitial1">ca-app-pub-4414879063309753/8970456947</string>
+    <string name="adinterstitial2">ca-app-pub-4414879063309753/8443897239</string>
+
+
+    <string name="title_activity_choose_currency"> </string>
+    <string name="title_activity_bitcoin">Bitcoin</string>
+    <string name="title_activity_mining">Mining</string>
+    <string name="title_activity_wallets">Wallets</string>
+    <string name="title_activity_yesterdays_rate"> </string>
+    <string name="title_activity_historical_data">Historical Data</string>
+    <string name="title_activity_maintohistorical"> </string>
+    <string name="title_activity_one_bitcoin_yesterday_data"> </string>
+    <string name="title_activity_latest_hash">Latest Block Hash</string>
+    <string name="title_activity_wallet_info">Mining Info.</string>
+    <string name="title_activity_about_us">aboutUs</string>
+</resources>

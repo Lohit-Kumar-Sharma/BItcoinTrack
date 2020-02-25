@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="lohitprojects.bitcointrack.Wallets">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/chocolateColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:text="What is a Bitcoin Wallet?"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:longClickable="true"
+                android:padding="2dp"
+                android:text="A Bitcoin wallet is the first step to using Bitcoin.
+
+Why?
+
+Without a wallet, you can’t receive, store, or spend bitcoins.
+
+You can think of a wallet as your personal interface to the Bitcoin network, similar to how your online bank account is an interface to the regular monetary system.
+
+Bitcoin wallets contain private keys; secret codes that allow you to spend your bitcoins.
+
+In reality, it’s not bitcoins that need to be stored and secured, but the private keys that give you access to them."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:longClickable="true"
+                android:padding="2dp"
+                android:text="In short: A Bitcoin wallet is simply an app, website, or device that manages Bitcoin private keys for you."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:text="Some wallet Links :"
+android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:longClickable="true"
+                android:padding="5dp"
+                android:id="@+id/unocoin"
+                android:layout_marginTop="5dp"
+                android:text="Unocoin "
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:longClickable="true"
+                android:padding="5dp"
+                android:id="@+id/localbitcoins"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="LocalBitcoins "
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:longClickable="true"
+                android:padding="5dp"
+                android:id="@+id/zebpay"
+                android:layout_marginTop="5dp"
+                android:text="Zebpay"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:longClickable="true"
+                android:padding="5dp"
+                android:id="@+id/coinsecure"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Coinsecure "
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="true" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:text="Disclaimer"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/asap"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:longClickable="true"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@android:color/white"
+                android:padding="2dp"
+                android:text="This app is for information purpose only. Don’t take this information as an investment suggestion. As you know cryptocurrencies are highly volatile therefore invest in them on your own risk."
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_light"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+    <!-- view for AdMob Interstitial Ad -->

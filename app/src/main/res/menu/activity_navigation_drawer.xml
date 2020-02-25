@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Import" />-->
+
+        <item
+            android:id="@+id/nav_bitcoins"
+            android:checkable="false"
+            android:icon="@drawable/nav_bitcoin_icon"
+            android:title="Bitcoins?" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/nav_bitcoin_wallet"
+            android:title="Bitcoin Wallets?" />
+        <item
+            android:id="@+id/nav_mining"
+            android:icon="@drawable/nav_bitcoin_mining"
+            android:title="Mining?" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@android:drawable/ic_dialog_alert"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate_us"
+                android:title="Rate Us" />
+
+            <item
+                android:id="@+id/more_apps"
+                android:icon="@drawable/more_apps"
+                android:title="More Apps" />
+        </menu>
+    </item>
+
+</menu>
